@@ -1,0 +1,32 @@
+POST http://localhost:8080/api/referees
+Content-Type: application/json
+
+{
+  "id": "HANNA100",
+  "name": "Ranna",
+  "email": "hanna@123.com",
+  "code": "HANNA1220",
+  "orders": ["dedeed","edededed","dededede"]
+}
+
+###
+
+#PUT http://localhost:8080/api/referees/HANNA100
+PUT  https://store77.herokuapp.com/api/referees/JOHN
+Content-Type: application/json
+
+{
+  "id": "JOHN",
+  "name": "Jone Baker",
+  "email": "Jone@223.com",
+  "orders": ["wdewd","wedwedw"]
+}
+
+###
+GET http://localhost:8080/api/referees/HANNA1003
+###
+
+###
+GET http://localhost:8080/api/referees
+###
+DELETE http://localhost:8080/api/referees/HANNA1003

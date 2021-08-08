@@ -1,0 +1,126 @@
+
+###
+POST http://localhost:8080/api/orders/BIN08062021LPVOH8
+Content-Type: application/json
+
+{
+  "id": "BIN08062021LPVOH8",
+  "invoice": {
+    "callback_url": "https://baskinnature.in/user/checkout/?clan=SdRoLKRaD&invoice=BIN2752021-G249X",
+    "amount": "12460",
+    "description": "Payment for the purchase at Bask in Nature.in",
+    "receipt": "BIN08062021LPVOH8",
+    "type": "link",
+    "callback_method": "get"
+  },
+  "line_items": [
+    {
+      "amount": "10",
+      "shippingFees": "85",
+      "quantity": "1",
+      "name": "Natural Hair colour",
+      "description": "1 item of  Natural Hair colour - 150 ",
+      "currency": "INR",
+      "id": "qhnt93a9c75i",
+      "_description": "Natural Hair colour - 150  ",
+      "type": "invoice",
+      "varaint": "150"
+    },
+    {
+      "amount": "10",
+      "shippingFees": "85",
+      "quantity": "1",
+      "name": "Beetroot Lip Balm",
+      "description": "1 item of  Beetroot Lip Balm - 13  - Tub",
+      "currency": "INR",
+      "id": "1hrj7yu0l0v8y",
+      "_description": "Beetroot Lip Balm - 13  - Tub ",
+      "type": "invoice",
+      "varaint": "13"
+    },
+    {
+      "amount": "24",
+      "shippingFees": "85",
+      "quantity": "1",
+      "name": "Pink Lip Balm",
+      "description": "1 item of  Pink Lip Balm - 13g  - Tub",
+      "currency": "INR",
+      "id": "sl8wudmzw0fk",
+      "_description": "Pink Lip Balm - 13g  - Tub ",
+      "type": "invoice",
+      "varaint": "13g"
+    }
+  ],
+  "stockObject": [],
+  "shippingAddress": {
+    "zipcode": "600034",
+    "phoneNumber": "9666934040",
+    "city": "Hyderabad",
+    "fullName": "Saiteja Konda",
+    "id": "355",
+    "state": "Telangana",
+    "type": "HOME",
+    "line2": "west maredipallie street, old city",
+    "userId": "kondasaitej@gmail.com",
+    "line1": "21/86"
+  },
+  "userDetails": {
+    "image": "https://lh3.googleusercontent.com/a/AATXAJzNZ1fi7jRr_a0uJJaP4aokQOFYdXDhr8Mgbu2B=s96-c",
+    "fullName": "Saiteja Konda",
+    "email": "kondasaitej@gmail.com"
+  },
+  "razorpay_payment_id": "pay_HFpoxGtQaYGema",
+  "data": {
+    "vpa": "7010056430@kotak",
+    "rrn": "114719444825"
+  },
+  "method": "vpa",
+  "shippingFees": 85,
+  "userId": "kondasaitej@gmail.com",
+  "coupon": "loyal10",
+  "couponApplied": true,
+  "discountedPrice": 4.4
+}
+
+###
+GET http://localhost:8080/api/orders/BIN10062021YGKEZF
+######
+GET https://store77.herokuapp.com/api/orders/
+
+###
+POST http://localhost:8080/api/orders/update/BIN15062021FFNVS1/2
+Content-Type: application/json
+
+{
+  "awb": "AKIMNIWDWD",
+  "courierName": "Blue Dart",
+  "email": null,
+  "name": "Saiteja Konda",
+  "orderId": "BIN22052021IWMW"
+}
+
+
+
+###
+POST http://localhost:8080/api/orders/stock
+Content-Type: application/json
+
+{
+  "stockObjects": [
+    {
+      "quantity": "1",
+      "id": "rkxbuh8dzvau"
+    },
+    {
+      "quantity": "2",
+      "id": "1iepgyik2c853"
+    },
+    {
+      "quantity": "1",
+      "id": "t4w75rpk5fle"
+    }
+  ]
+}
+
+###
+GET http://localhost:8080/api/orders/release/BIN10062021LRUPEB?razorpay_payment_id=dkemslkeomdd
